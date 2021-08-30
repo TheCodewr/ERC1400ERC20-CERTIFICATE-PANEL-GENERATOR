@@ -1,0 +1,95 @@
+<!DOCTYPE html>
+<html lang="en">
+
+  <head>
+
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+    <meta name="description" content="">
+    <meta name="author" content="">
+
+    <title>EQWIPASS ERC1400ERC20 CERT PANEL </title>
+
+    <!-- Bootstrap core CSS -->
+    <link href="vendor/bootstrap/css/bootstrap.min.css" rel="stylesheet">
+
+    <!-- Custom fonts for this template -->
+    <link href="vendor/fontawesome-free/css/all.min.css" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css?family=Varela+Round" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css?family=Nunito:200,200i,300,300i,400,400i,600,600i,700,700i,800,800i,900,900i" rel="stylesheet">
+
+    <!-- Custom styles for this template -->
+    <link href="css/grayscale.min.css" rel="stylesheet">
+
+  </head>
+
+  <body id="page-top">
+      <p></p>
+    <!-- Header -->
+    <header class="masthead">
+      <div class="container d-flex h-10 align-items-center">
+        <div class="mx-auto text-center">
+          <div id="menu" class="">
+
+              <div class="menu-box">
+                  <div class="menu-wrapper">
+                      <div class="menu-wrapper hidden" id="adminPanel">
+                          <p style="opacity: 0.4;">V 2.1 ERC1400ERC20 CERTIFICATE PANEL GENERATOR</p>
+                          <p style="color:orangered"><i class="fab fa-firefox"></i> FireFox Recommended</p>
+                        <p class="h1"></p>
+                        <p class="h3" style="color:white;" > ERC1400ERC20 CERT PANEL</p>
+                        <p for="userAddress">User Address:</p>
+                        <input type="text" class="col-xs-12" id="userAddress" style="color: black; width: 40rem;" value="0x0000000000000000000000000000000000000000">
+                         
+                        <p for="contractAddress">Destination contract Address:</p>
+                        <input type="text" class="col-xs-12" id="contractAddress" style="color: black; width: 40rem;" value="0x0000000000000000000000000000000000000000">
+                      
+                        <!-- <p for="sendAmount">ETH to send:</p>
+                        <input type="text" class="col-xs-12" id="sendAmount" style="color: black; width: 40rem;" value="0"> -->
+                         
+                        <p for="time">Expiration time (<a href="https://www.epochconverter.com/" target="_blank">Epoch format</a>):</p>
+                        <input type="text" class="col-xs-12" id="time" style="color: black; width: 40rem;" value="1555399738">
+                      
+                        <p for="funcDec">Function to call:</p>
+                        <li>issueByPartition(bytes32,address,uint256,bytes)</li>
+                        <li>operatorTransferByPartition(bytes32,address,address,uint256,bytes,bytes)</li>
+                        <input type="text" class="col-xs-12" id="funcDec" style="color: black; width: 40rem;" value="testValid(uint256,uint256,bytes)">
+                        <br>
+                       <hr>
+                        <p></p>
+                        <a href="https://etherconverter.online/" target="_blank">Unit to Wei(18) convertor</a>
+                        <li>Last data = Null</li>
+                        
+
+                        <p for="funcPar"> <input type="text" class="col-xs-12" id="funcPar" style="color: black; width: 40rem;" value="0,0"></p>
+                        <p></p>
+                        <p class="h1"><img width="100px" style="opacity: 0.1;" src="https://static1.squarespace.com/static/5c442c299772ae79afbcfddd/t/5cd82662e2c4831e18fb2e95/1557669474759/Logo_eqwity280x280.png"></p>
+                        <p></p>
+                        <button type="button" class="btn btn-primary btn-block" onclick="generateCertificate()">Generate Certificate</button>
+
+                      </div>
+                  </div>
+              </div>
+          </div>
+        </div>
+      </div>
+    </header>
+
+    <!-- Bootstrap core JavaScript -->
+    <script src="vendor/jquery/jquery.min.js"></script>
+    <script src="vendor/bootstrap/js/bootstrap.bundle.min.js"></script>
+
+    <!-- Plugin JavaScript -->
+    <script src="vendor/jquery-easing/jquery.easing.min.js"></script>
+
+    <!-- Custom scripts for this template -->
+    <script type="text/javascript" src="https://cdn.jsdelivr.net/npm/ethjs@0.3.4/dist/ethjs.min.js"></script>
+    <script src="js/grayscale.min.js"></script>
+    <script src="js/functions.js"></script>
+    <script src="js/ethereumjs-abi-0.6.5.min.js"></script>
+    <script src="js/ethereumjs-all-2018-1-17.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/gh/ethereum/web3.js@1.0.0-beta.34/dist/web3.min.js"></script>
+
+  </body>
+
+</html>
